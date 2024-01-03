@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+body{
+    background:url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    height: 100vh;
+    position: relative;
+}
+section#telefone{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*para centralizar a imagem do telefone no centro, foi preciso colocar a função 'position: relative;' no main e a função 'position: absolute;' aqui nessa section. também foi necessário colocar as orientações 'top: 50%' e 'left: 50%'; isso fez com que a imagem ficasse para baixo e na direita (o navegador leva em conta o canto superior esquerdo). para resolver este problema, foi colocado a seguinte função: transform: translate(-50%, -50%)*/
+    background: url('../imagens/frame-iphone.png');
+    height: 627px;
+    width: 311px;
+
+}
